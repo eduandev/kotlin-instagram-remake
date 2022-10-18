@@ -1,4 +1,4 @@
-package edu.and.instagramramakeproject
+package edu.and.instagramremake
 
 import org.junit.Test
 

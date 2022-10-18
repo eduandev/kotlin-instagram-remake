@@ -28,27 +28,40 @@
                 android:contentDescription="@null"
                 android:src="@drawable/instagram_logo_black" />
 
-            <EditText
-                android:id="@+id/login_edit_email"
-                style="@style/Theme.InstagramRamakeProject.FormEditText"
-                android:autofillHints="@null"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_edit_email_input"
+                style="@style/Theme.InstagramRemake.FormEditTextInput"
+                app:hintEnabled="false">
 
-            <EditText
-                android:id="@+id/login_edit_password"
-                style="@style/Theme.InstagramRamakeProject.FormEditText"
-                android:autofillHints="@null"
-                android:hint="@string/password"
-                android:inputType="textPassword" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edit_email"
+                    style="@style/Theme.InstagramRemake.FormEditText"
+                    android:autofillHints="@null"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_edit_password_input"
+                style="@style/Theme.InstagramRemake.FormEditTextInput"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edit_password"
+                    style="@style/Theme.InstagramRemake.FormEditText"
+                    android:autofillHints="@null"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <edu.and.instagramremake.login.view.LoadingButton
                 android:id="@+id/login_btn_enter"
-                style="@style/Theme.InstagramRamakeProject.Button"
-                android:text="@string/enter" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="@string/enter" />
 
             <FrameLayout
-                style="@style/Theme.InstagramRamakeProject.FormContainer"
+                style="@style/Theme.InstagramRemake.FormContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -59,7 +72,7 @@
                     android:background="@color/gray_border" />
 
                 <TextView
-                    style="@style/Theme.InstagramRamakeProject.TextViewBase"
+                    style="@style/Theme.InstagramRemake.TextViewBase"
                     android:layout_gravity="center"
                     android:background="@color/white"
                     android:padding="8dp"
@@ -79,14 +92,14 @@
 
     <TextView
         android:id="@+id/login_txt_register"
-        style="@style/Theme.InstagramRamakeProject.TextViewBase"
+        style="@style/Theme.InstagramRemake.TextViewBase"
         android:layout_width="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white"
         android:padding="24dp"
         android:text="@string/does_not_have_account"
         android:textAlignment="center"
-        android:background="@color/white"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

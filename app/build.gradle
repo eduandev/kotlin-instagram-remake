@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'edu.and.instagramramakeproject'
+    namespace 'edu.and.instagramremake'
     compileSdk 32
 
     defaultConfig {
-        applicationId "edu.and.instagramramakeproject"
+        applicationId "edu.and.instagramremake"
         minSdk 21
         targetSdk 32
         versionCode 1

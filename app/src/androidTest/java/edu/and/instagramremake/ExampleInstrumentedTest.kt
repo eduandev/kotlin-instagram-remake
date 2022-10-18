@@ -1,4 +1,4 @@
-package edu.and.instagramramakeproject
+package edu.and.instagramremake
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("edu.and.instagramramakeproject", appContext.packageName)
+        assertEquals("edu.and.instagramremake", appContext.packageName)
     }
 }
