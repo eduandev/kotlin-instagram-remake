@@ -38,12 +38,11 @@
     <fragment
         android:id="@+id/main_fragment"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:name="edu.and.instagramremake.search.view.FragmentSearch"
-        tools:layout="@layout/fragment_search"
+        android:name="edu.and.instagramremake.camera.view.FragmentCamera"
+        tools:layout="@layout/fragment_gallery"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_botton_nav"
